@@ -1,1 +1,0 @@
-console.log(doc.body.innerHTML); 
