@@ -1,8 +1,21 @@
 {
     "files.exclude": {
+        "**/.classpath": false,
+        "**/.project": false,
+        "**/.settings": false,
+        "**/.factorypath": false,
         "**/.dccache": true,
         "README.md": true,
     },
+
+    "java.home": "/home/lindx/dev-libs/java/jdk-14.0.1",
+
+    "java.project.exportJar.targetPath": "${workspaceFolder}/App.jar",
+
+    "java.project.referencedLibraries": [
+        "lib/*.jar",
+        "lib/**/*.jar"
+    ],
 
     "workspaceCacheClean.silent": false,
     "workspaceCacheClean.autoReload": false,
