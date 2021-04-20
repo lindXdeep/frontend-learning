@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/bootstrap/bootstrap-theme.min.css">
+
+  <title>Main</title>
+</head>
+
+<body>
+
+
+  <br>
+  <div class="container">
+
+    <!-- <ul class="nav nav-tabs" role="tablist"> -->
+
+    <ul class="nav nav-tabs" role="tablist">
+      <li><a href="#home" role="tab" data-toggle="pill">Домой</a></li>
+      <li><a href="#profile" role="tab" data-toggle="pill">Профиль</a></li>
+      <li class="active"><a href="#message" role="tab" data-toggle="pill">Сообщения</a></li>
+      <li><a href="#settings" role="tab" data-toggle="pill">Настройки</a></li>
+    </ul>
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane fade" id="home">Вкладка домой</div>
+      <div role="tabpanel" class="tab-pane fade" id="profile">Вкладка профайл</div>
+      <div role="tabpanel" class="tab-pane active fade in" id="message">Вкладка с сообщениями</div>
+      <div role="tabpanel" class="tab-pane fade" id="settings">Вкладка с настройками</div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="../static/js/jquery/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="../static/js/bootstrap/bootstrap.min.js"></script>
+
+  <script>
+    $('a[data-toggle="pill"]').on('hidden.bs.tab', function(e) {
+      console.log(e.target); // вкладка, которая стала активной
+      console.log(e.relatedTarget); // предыдущая активная вкладка
+    })
+  </script>
+</body>
+
+</html>
