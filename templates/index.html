@@ -19,9 +19,7 @@
     <div class="row">
 
       <aside class="col-sm-2 col-md-2 col-lg-2">
-
         <div class="row">
-
           <ul class="nav nav-stacked nav-pills" role="tablist">
             <li class="active">
               <a href="#admin" role="tab" data-toggle="pill"> Admin </a>
@@ -30,25 +28,58 @@
               <a href="#user" role="tab" data-toggle="pill"> User </a>
             </li>
           </ul>
-
         </div>
       </aside>
 
-      <main class="col-sm-10 col-md-10 col-lg-10">
-        <div class="row">
+      <main class="col-sm-10 col-md-10 col-lg-10" style="background-color: whitesmoke;">
 
-          <div class="tab-content">
+        <div class="row ">
+          <div class="tab-content col col-sm-12 col-md-12 col-lg-12 col-xl-12 lin-1">
 
+            <!-- TODO: Admin panel -->
             <div role="tabpanel" class="tab-pane active fade in" id="admin">
-              <p>Вкладвка Admin</p>
+
+              <div class="row">
+                <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-12 lin-2">
+                  <h1>Admin Panel</h1>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#allusers" data-toggle="pill">Users table</a></li>
+                    <li><a href="#adduser" data-toggle="pill">Add User</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- TODO: User tablle and Add user tabs -->
+              <div class="tab-content row">
+
+                <!-- TODO: All users pane -->
+                <div role="tabpanel" id="allusers" class="tab-pane fade col-sm-12 col-md-12 col-lg-12">
+                  <p class="lin-2">All users</p>
+                </div>
+
+                 <!-- TODO: Add user pane -->
+                <div role="tabpanel" id="adduser" class="tab-pane fade col-sm-12 col-md-12 col-lg-12">
+                  <p class="lin-2">Add user</p>
+                </div>
+
+              </div>
+
             </div>
 
+            <!-- TODO:User panel -->
             <div role="tabpanel" class="tab-pane fade" id="user">
               <p>Вкладвка User</p>
             </div>
+
           </div>
 
         </div>
+
       </main>
 
     </div>
