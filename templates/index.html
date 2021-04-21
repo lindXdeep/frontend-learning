@@ -18,22 +18,44 @@
   <div class="container-fluid">
     <div class="row">
 
-      <aside class="col-sm-2 col-md-2 col-lg-2 lin-1">
-        <div>
-          <p>Боковая панель</p>
+      <aside class="col-sm-2 col-md-2 col-lg-2">
+
+        <div class="row">
+
+          <ul class="nav nav-stacked nav-pills" role="tablist">
+            <li class="active">
+              <a href="#admin" role="tab" data-toggle="pill"> Admin </a>
+            </li>
+            <li>
+              <a href="#user" role="tab" data-toggle="pill"> User </a>
+            </li>
+          </ul>
+
         </div>
       </aside>
 
-      <main class="col-sm-10 col-md-10 col-lg-10 lin-2">
-        <p>Основной конетнт</p>
+      <main class="col-sm-10 col-md-10 col-lg-10">
+        <div class="row">
+
+          <div class="tab-content">
+
+            <div role="tabpanel" class="tab-pane active fade in" id="admin">
+              <p>Вкладвка Admin</p>
+            </div>
+
+            <div role="tabpanel" class="tab-pane fade" id="user">
+              <p>Вкладвка User</p>
+            </div>
+          </div>
+
+        </div>
       </main>
 
     </div>
   </div>
 
-
-  <script type="text/javascript" src="../static/js/bootstrap/bootstrap.min.js"></script>
   <script type="text/javascript" src="../static/js/jquery/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="../static/js/bootstrap/bootstrap.min.js"></script>
 
 </body>
 
