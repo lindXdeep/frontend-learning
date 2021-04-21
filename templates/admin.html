@@ -19,8 +19,7 @@
   <div class="navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a href="#" class="navbar-brand"><b style="color: white;">user@user</b> with roles: USER</a>
-
+        <a href="#" class="navbar-brand"><strong style="color: white;">user@user</strong> with roles: USER</a>
       </div>
       <div class="navbar-right">
         <a href="#" class="navbar-brand btn-link">logout</a>
@@ -33,6 +32,7 @@
 
       <aside class="col-sm-2 col-md-2 col-lg-2">
         <div class="row">
+          <br>
           <ul class="nav nav-stacked nav-pills" role="tablist">
             <li class="active">
               <a href="#admin" role="tab" data-toggle="pill"> Admin </a>
@@ -203,26 +203,21 @@
                                     <option value="User">USER</option>
                                 </select>
                             </div>
-    
+
                             <div class="row">
                               <div class="col">
                                 <input type="submit" class="btn btn-success btn-lg" value="Add new user">
                               </div>
                             </div>
-    
+
                           </form>
                         </div>
                       </div>
 
-                      
-
                     </div>
                   </div>
 
-
                 </div>
-
-
 
               </div>
 
@@ -231,15 +226,64 @@
 
             <!-- TODO:User panel -->
             <div role="tabpanel" class="tab-pane fade" id="user">
-              <p>Вкладвка User</p>
+
+              <div class="row">
+                <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                  <h1><b>User information-page</b></h1>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading"><b>About user</b></div>
+                <div class="panel-body">
+
+
+                  <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                      <thead>
+                        <tr>
+                          <th>id</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Age</th>
+                          <th>Email</th>
+                          <th>Password</th>
+                          <th>Role</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Tom</td>
+                          <td>johnson</td>
+                          <td>33</td>
+                          <td>user@user</td>
+                          <td>sdfgrewghhf</td>
+                          <td>ROLE_USER</td>
+                        </tr>
+                       
+                        
+                      </tbody>
+                    </table>
+
+                  </div>
+
+
+                </div>
+
+              </div>
+
             </div>
 
+
           </div>
+
         </div>
-
-      </main>
-
     </div>
+
+    </main>
+
+  </div>
   </div>
 
   <script type="text/javascript" src="../static/js/jquery/jquery-3.6.0.min.js"></script>
