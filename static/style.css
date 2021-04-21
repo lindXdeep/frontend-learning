@@ -53,8 +53,18 @@
   float: none;
 }
 
+.row-centered{
+  margin-top: 10%;
+  margin-bottom: auto;
+  float: none;
+}
+
 /* .bloc select {
   overflow: hidden;
   padding: 0px;
   margin: -5px -20px -5px -5px;
 } */
+
+body {
+  background-color: whitesmoke;
+}
