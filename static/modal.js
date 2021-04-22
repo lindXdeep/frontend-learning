@@ -11,3 +11,9 @@ window.onclick = (event) => {
     modal.style.display = "none"
   }
 } 
+
+// $('.mybutton').click(function(e) {
+//   e.preventDefault();
+//   $('.myModal').fadeIn(800);
+//   $('html').addClass('no-scroll');
+// });
