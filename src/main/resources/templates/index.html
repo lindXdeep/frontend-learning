@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" />
+  <script type="text/javascript" src="/js/jquery-3.3.1.min.js" th:src="@{/js/jquery-3.3.1.min.js}"></script>
+
+  <title>Main</title>
+
+  <script>
+    $(document).ready(function() {
+      alert("Hello world !! document is ready");
+    });
+  </script>
+
 </head>
+
 <body>
-  <p> Hello</p>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#test").html("This is Hello World by JQuery");
+    });
+  </script>
+
+  This is test by HTML
+
+  <div id="test">
+
+  </div>
+
+  <script type="text/javascript" src="/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+  <script type="text/javascript" src="/js/mymodal.js" th:src="@{/js/mymodal.js}"></script>
+
 </body>
+
 </html>
