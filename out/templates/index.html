@@ -36,7 +36,7 @@
               <td th:text="${user.username}"></td>
               <td th:text="${user.lastname}"></td>
               <td>
-                <a class="btn btn-banger mybtn-edit">Edit</a>
+                <a th:href="@{findOne/(id=${user.id})}" class="btn btn-banger mybtn-edit">Edit</a>
                 <a class="btn btn-banger mybtn-del">Delete</a>
               </td>
             </tr>
@@ -76,8 +76,8 @@
                   <input type="text" class="form-control" id="id" name="id" value="">
                 </div>
                 <div class="form-group">
-                  <label for="firstname" class="col-form-label">Name:</label>
-                  <input type="text" class="form-control" id="firstname" name="firstname" value="">
+                  <label for="username" class="col-form-label">Name:</label>
+                  <input type="text" class="form-control" id="username" name="username" value="">
                 </div>
                 <div class="form-group">
                   <label for="lastname" class="col-form-label">Lastname:</label>
