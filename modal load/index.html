@@ -1,0 +1,134 @@
+<!DOCTYPE html >
+
+<html>
+
+<head>
+  <script src="./jquery.min.js"></script>
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <link rel="stylesheet" href="./bootstrap-theme.min.css.css">
+  <script src="./bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="modal fade" id="modal-view" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Recipient:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="@modal">Close</button>
+          <button type="button" class="btn btn-primary">Edit</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <button type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+  <button type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+  <button type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+
+  <div>
+    <tr>--------------</tr>
+  </div>
+
+  <div class=" modal fade" id="modal-user-view" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+        </div>
+
+
+        <div class="modal-body">
+
+          <form>
+            <div class="form-group">
+              <label for="firstname" class="firstname col-form-label">Firstname:</label>
+              <input type="text" class="form-control un" id="firstname">
+            </div>
+            <div class="form-group">
+              <label for="lastname" class="lastname col-form-label">Lastname:</label>
+              <input type="text" class="form-control ln" id="lastname">
+            </div>
+          </form>
+
+        </div>
+
+        <div class="modal-footer">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <br><br><br><br><br><br>
+
+  <a data-toggle="modal" data-target="#modal-user-view" 
+      data-firstname="Tom"
+      data-lastname="last">test</a>
+
+
+
+  <script>
+    $('#modal-user-view').on('show.bs.modal', function(event) {
+      var button = $(event.relatedTarget) // Button that triggered the modal
+
+      var firstname = button.data('firstname') // Extract info from data-* attributes
+
+      var modal = $(this)
+      modal.find('.modal-body .firstname').val(firstname)
+
+
+    })
+    $('#modal-user-view').on('show.bs.modal', function(event) {
+      var button = $(event.relatedTarget) // Button that triggered the modal
+
+      var lastname = button.data('lastname')
+
+      var modal = $(this)
+      modal.find('.modal-body .lastname').val(lastname)
+
+    })
+
+  </script>
+
+
+  <script>
+    $('#modal-view').on('show.bs.modal', function(event) {
+      var button = $(event.relatedTarget) // Button that triggered the modal
+      var recipient = button.data('username') // Extract info from data-* attributes
+
+      var modal = $(this)
+      modal.find('.modal-title').text('New message to ' + recipient)
+      modal.find('.modal-body input').val(recipient)
+    })
+  </script>
+</body>
+
+</html>

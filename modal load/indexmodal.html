@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="./jquery.min.js"></script>
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <link rel="stylesheet" href="./bootstrap-theme.min.css.css">
+  <script src="./bootstrap.min.js"></script>
+
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+
+        <div class="modal-body">
+          <legend>Edit user</legend>
+
+          <form th:method="patch" th:action="@{
+                                        /admin/user/{id}(id = ${user.getId()})
+                                      }" th:object="${user}">
+
+            <fieldset>
+              <div class="form-group ">
+                <label for="name">First name</label>
+                <input th:value="${user.firstName}" name="firstName" id="name" type="text" class="form-control text-center">
+              </div>
+              <div class="form-group">
+                <label for="last">Last name</label>
+                <input th:value="${user.lastName}" name="lastName" id="last" type="text" class="form-control text-center">
+              </div>
+              <div class="form-group">
+                <label for="age">Age</label>
+                <input th:value="${user.age}" name="age" id="age" type="number" class="form-control text-center">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input th:value="${user.email}" name="email" id="email" type="email" class="form-control text-center">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input th:value="${user.password}" name="password" id="password" type="text" class="form-control text-center">
+              </div>
+
+              <div class="form-group">
+                <label for="role">Role</label>
+                <select name="select_role" size="2" class="form-control text-center">
+                <option th:value="'ROLE_ADMIN'" th:text="ROLE_ADMIN"></option>
+                <option th:value="'ROLE_USER'" th:text="ROLE_USER"></option>
+              </select>
+              </div>
+            </fieldset>
+            
+            <div class="row">
+              <div class="col" style="float: right; margin-right: 20px;">
+      
+                <a id="cancel" type="submit" class="btn btn-success btn-md">Close
+                </a>
+      
+                <button type="submit" class="btn btn-primary btn-md">Edit
+                </button>
+      
+              </div>
+            </div>
+
+
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script th:if="${existRoll != null}">
+    $(function() {
+      $('#myModal').modal('show');
+    });
+  </script>
+
+
+
+</body>
+
+</html>

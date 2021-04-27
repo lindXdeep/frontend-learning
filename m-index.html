@@ -13,14 +13,17 @@
   <title>Main panel</title>
 </head>
 
+<body>
 
-<modal-window class="modal-win ">
+  <win-block class="win-block" id="win-block">
+  </win-block>
 
-  <modal-login class="modal-login">
+  <div class="contaner modal-login" id="modal-login">
 
     <div class="header">
       <div>
-        <h1><span class="modal-close">&times;</span></h1>
+        <h1><span class="modal-close" id="btn-close">&times;</span></h1>
+        <h1><strong>Please sign in</strong></h1>
       </div>
     </div>
 
@@ -38,17 +41,18 @@
       </form>
     </div>
 
-
-  </modal-login>
-
-</modal-windows>
-
-<body>
+  </div>
 
 
 
   <div class="navbar-inverse">
+
+
+
     <div class="container-fluid">
+
+
+
       <div class="navbar-header">
         <a href="#" class="navbar-brand"><strong style="color: white;">user@user</strong> with roles: USER</a>
       </div>
@@ -56,9 +60,14 @@
         <a href="#" class="navbar-brand btn-link">logout</a>
       </div>
     </div>
+
+
+
   </div>
 
+
   <div class="container-fluid">
+
     <div class="row">
 
       <aside class="col-sm-2 col-md-2 col-lg-2">
@@ -66,7 +75,7 @@
           <br>
           <ul class="nav nav-stacked nav-pills" role="tablist">
             <li class="active">
-              <a href="#admin" role="tab" data-toggle="pill"> Admin </a>
+              <a id="btn-login" href="#admin" role="tab" data-toggle="pill"> Admin </a>
             </li>
             <li>
               <a href="#user" role="tab" data-toggle="pill"> User </a>
@@ -93,7 +102,7 @@
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                   <ul class="nav nav-tabs">
                     <li class="active"><a href="#allusers" data-toggle="pill">Users table</a></li>
-                    <li><a href="#adduser" data-toggle="pill">Add User</a></li>
+                    <li><a id="btn-login" href="#adduser" data-toggle="pill">Add User</a></li>
                   </ul>
                 </div>
               </div>
@@ -134,7 +143,7 @@
                                 <td>
                                   <a class="btn-edit btn" href="#">
                                     <span class="icon i-edit bg-warning" data-toggle="tooltip" data-placement="top" title="Edit">
-                                      <a class="btn-edit" href="#">edit</a>
+                                      <a id="my-btn-login" class="btn-edit" href="#">edit</a>
                                     </span>
                                   </a>
                                   <a class="btn" href="#">
@@ -270,6 +279,7 @@
 
               <div class="panel panel-default">
                 <div class="panel-heading"><b>About user</b></div>
+                
                 <div class="panel-body">
 
 
@@ -314,16 +324,19 @@
           </div>
 
         </div>
+
+
+      </main>
+
     </div>
-
-    </main>
-
   </div>
   </div>
+
+
 
   <script type="text/javascript" src="./static/jquery.js"></script>
   <script type="text/javascript" src="./static/bootstrap.js"></script>
-  <script type="text/javascript" src="./m-script.js.js"></script>
+  <script type="text/javascript" src="./m-script.js"></script>
 
   <script>
     $(document).ready(function() {
