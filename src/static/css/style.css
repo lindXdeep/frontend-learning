@@ -1,0 +1,83 @@
+/* Обнуление */
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* стили */
+
+wrapper {}
+
+
+/* Основные стили */
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+header::before {
+  /*растянется фон на всю область*/
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+
+.container {
+  max-width: 1180px;
+  /* ограничиваем размер контейнера */
+  margin: 0px auto;
+  /* По центру по ширене */
+  padding: 0px 10px;
+  /* Отступ внутырь верх/низ лево/право */
+}
+
+.header__body {
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+
+.header__logo {}
+
+.header__logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.header__burger {}
+
+.header__menu {}
+
+.header__list,
+.header__link {
+  color: white;
+  font-weight: bold;
+}
+
+.header__list {
+ 
+}
+
+.header__link {
+
+}
