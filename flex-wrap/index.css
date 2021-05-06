@@ -1,0 +1,30 @@
+.flex-container {
+  display: flex;
+  background-color: #673AB7;
+  width: 150px;
+
+  flex-wrap: wrap;
+}
+
+.flex-container2 {
+  display: flex;
+  background-color: #673AB7;
+  width: 150px;
+
+  flex-wrap: wrap-reverse;
+}
+
+.flex-container2 div,
+.flex-container div {
+  padding: 20px;
+  margin-right: 10px;
+
+  background-color: #2196F3;
+  color: white;
+
+}
+
+.flex-container2 div:nth-child(2n),
+.flex-container div:nth-child(2n){
+  background: #3F51B5;
+}
