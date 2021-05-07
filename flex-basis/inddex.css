@@ -1,0 +1,61 @@
+:root {
+  --height-block: 50px;
+}
+
+.bg-red {
+  background: #d32f2f;
+}
+
+.bg-green {
+  background: #388e3c;
+}
+
+.bg-blue {
+  background: #1976d2;
+}
+
+.items-flexibility {
+  display: flex;
+  width: 600px;
+}
+
+
+.flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: var(--height-block);
+  padding: 20px;
+  box-sizing: border-box;
+  
+  color: white;
+}
+
+.flex-item2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: var(--height-block);
+  padding: 20px;
+  box-sizing: border-box;
+  flex-basis: 200px;
+  color: white;
+}
+
+.flex-item3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: var(--height-block);
+  padding: 20px;
+  box-sizing: border-box;
+  flex-basis: 200px;
+  color: white;
+}
+
+.flex-basis-more {
+  flex-basis: 400px;
+}

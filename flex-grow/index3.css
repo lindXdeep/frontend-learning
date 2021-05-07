@@ -1,0 +1,48 @@
+:root {
+  --min-height-block: 50px;
+  --width-block: 100px;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-grow-2 {
+  flex-grow: 2;
+}
+
+.w-300px {
+  width: 300px!important;
+}
+
+.bg-red {
+  background: #d32f2f;
+}
+
+.bg-green {
+  background: #388e3c;
+}
+
+.bg-blue {
+  background: #1976d2;
+}
+
+.items-flexibility {
+  display: flex;
+  width: 700px;
+  
+  background: #9e9e9e;
+}
+
+.flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  min-height: var(--min-height-block);
+  width: var(--width-block);
+  padding: 20px;
+  box-sizing: border-box;
+  
+  color: white;
+}
