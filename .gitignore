@@ -1,5 +1,4 @@
 .vscode/*
-target/
 .settings
 .factorypath
 .project
