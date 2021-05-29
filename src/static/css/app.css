@@ -1,4 +1,11 @@
-html, body{
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
   font-family: sans-serif;
 }
 
@@ -8,23 +15,23 @@ html, body{
   color: #1F3F68;
 }
 
-.h1{
+.h1 {
   font-size: 64px;
   color: #1F3F68;
 }
 
-.h2{
+.h2 {
   font-weight: 500;
   font-size: 44px;
   text-align: center;
 }
 
-.h3{
+.h3 {
   font-size: 36px;
   text-align: center;
 }
 
-.h4{
+.h4 {
   font-size: 20px;
   line-height: 30px;
   color: #1F3F68;
@@ -47,4 +54,103 @@ html, body{
   text-align: center;
   color: #FFFFFF;
   text-transform: uppercase;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+
+  border: 1px solid black;
+}
+
+.menu > li {
+  list-style-type: none;
+}
+
+.title {
+  border: 1px solid blue;
+}
+
+.title h1 {
+  max-width: 510px;
+}
+
+.title p {
+  max-width: 425px;
+}
+
+.what-we-do {
+  display: flex;
+  justify-content: space-between;
+}
+
+article {
+  border: 1px solid red;
+  max-width: 359px;
+}
+
+footer {
+  border: 1px solid red;
+  background-color: #3585D3;
+}
+
+footer h3 {
+  max-width: 340px;
+}
+
+.footer-head {
+  border: 1px solid white;
+  color: white;
+  max-width: 495px;
+}
+
+.footer-bottom {
+  border: 1px solid white;
+  color: white;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+
+  border: 1px solid white;
+  color: white;
+}
+
+.copy{
+  border: 1px solid white;
+  color: white;
+}
+
+.row {
+
+  display: flex;
+  justify-content: space-between;
+
+  border: 1px solid red;
+}
+
+.col-contacts {
+  flex-grow: 1;
+}
+
+.col-send {
+  border: 1px solid blue;
+  flex-grow: 2;
+}
+
+.map {
+  min-width: 100%;
+  border: 1px solid #000;
+}
+
+.map script {
+  min-width: 100%;
+  min-height: 100%;
 }
