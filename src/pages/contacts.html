@@ -14,63 +14,88 @@
   <header>
     <div class="container">
       <ul class="menu">
-        <li><a href="/">Главная</a></li>
-        <li><a href="./pages/contacts.html">Контакты</a></li>
+        <li>
+          <a href="../index.html"><img src="../static/img/btn-radio.png" alt="" srcset=""></a>
+        </li>
+        <li>
+          <a href="pages/contacts.html"><img src="../static/img/book.png" alt="" srcset=""></a>
+        </li>
       </ul>
     </div>
   </header>
 
-  <div class="title">
-    <div class="container">
-      <h2 class="h2">Contact Us</h2>
-      <p class="regular">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, officiis?</p>
+  <div class="title-contacts">
+
+    <div class="back-prev">
+
+      <img src="../static/img/head-cont-prev.png" alt="">
+
+      <div class="about-us">
+        <div class="container">
+          <h2 class="h2">Contact Us</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+      </div>
+
     </div>
+
   </div>
 
-  <div class="content container">
+  <div class="container contacts-main">
 
     <div class="row">
 
-      <div class="col-contacts">
+      <div class="col contact-info">
 
-        <img src="../static/img/kit.png" alt="">
-        <h4 class="h4">Address</h4>
-        <p class="regular">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <h4 class="h4">Phone</h4>
-        <lu>
-          <li>+1-234-567-890</li>
-          <li>+1-234-567-890</li>
-        </lu>
-        <h4 class="h4">Online service</h4>
-        <lu>
-          <li><a href="http://">linkone</a></li>
-          <li><a href="http://">linkone</a></li>
-          <li><a href="mailto:mail@mail.com">mail@mail.com</a></li>
-        </lu>
-        <h4 class="h4">Send us message</h4>
+        <div class="card">
+
+          <img src="../static/img/ten-2.png" alt="">
+          <h4 class="h4">Address</h4>
+          <p class="regular">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <h4 class="h4">Phone</h4>
+          <ul>
+            <li class="tel">+1-234-567-890</li>
+            <li class="tel">+1-234-567-890</li>
+          </ul>
+          <h4 class="h4">Online service</h4>
+          <ul class="serv">
+            <li class="site"><a href="http://">www.site.com</a></li>
+            <li class="mail"><a href="mailto:mail@mail.com">hello.site@gmail.com</a></li>
+          </ul>
+
+        </div>
 
       </div>
 
       <div class="col-send">
 
+        <h4 class="h4">Send us message</h4>
+
         <form action="" method="post">
 
-          <label for="name">Full Name: </label>
-          <input class="input" type="text" id="name" placeholder="Full Name" />
+          <div class="field">
+            <label for="name">Full Name: </label>
+            <input class="input" type="text" id="name" placeholder="Full Name" />
+          </div>
 
           <br>
 
-          <label for="mail">Email:</label>
-          <input class="input" type="email" name="mail" id="mail" placeholder="Email" />
+          <div class="field">
+            <label for="name">Full Name: </label>
+            <input class="input" type="text" id="name" placeholder="Full Name" />
+          </div>
 
           <br>
 
-          <label for="msg">Message:</label>
-          <textarea class="input" name="msg" id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+          <div class="field">
+            <label for="msg">Message:</label>
+            <textarea class="input" name="msg" id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+          </div>
 
           <br>
 
           <input class="btn" type="submit" value="submit" />
+
         </form>
 
       </div>
@@ -88,26 +113,37 @@
   <footer>
     <div class="container">
 
-      <div class="footer-head">
-        <h3 class="h3">Lorem, ipsum dolor.</h3>
-        <p class="regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, deserunt!</p>
+      <div class="row">
+
+        <div class="col footer-head">
+          <h3 class="h3">Intersted to woek with our team?</h3>
+          <p class="regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+
+        <div class="col talk">
+          <button class="talk-btn">Let’s Talk</button>
+        </div>
+
       </div>
+    </div>
 
-      <hr>
+    <hr class="divider">
 
+    <div class="container">
       <div class="footer-bottom">
-        
-          <ul class="contacts">
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>+1-234-567-890</li>
-            <li>mail@mail.com</li>
-          </ul>
-      
+
+        <ol class="contacts">
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+          <li>+7-812-7313-4321</li>
+          <li>hello.site@gmail.com</li>
+        </ol>
+
         <div class="copy">
-          <p class="regular"> &copy; Все права защищены</p>
+          <p class="regular">2021 All rights reserved.</p>
         </div>
       </div>
     </div>
+
   </footer>
 
 </body>
