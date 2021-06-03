@@ -24,13 +24,11 @@ body {
   font-size: 16px;
   line-height: 26px;
   color: #1F3F68;
-  letter-spacing: 4%;
 }
 
 .h1 {
   font-size: 64px;
   color: #1F3F68;
-  letter-spacing: 5%;
 }
 
 .h2 {
@@ -572,7 +570,6 @@ footer p {
   .title h1 {
     min-height: 148px;
     width: 508px;
-    border-radius: nullpx;
     padding-top: 41px;
   }
   .title p {
@@ -657,7 +654,6 @@ footer p {
     width: 520px;
     left: 124px;
     top: 149px;
-    border-radius: nullpx;
   }
   .contacts-main .row {
     display: flex;
@@ -708,7 +704,6 @@ footer p {
     line-height: 38px;
     letter-spacing: 0.04em;
     text-align: center;
-    border-radius: nullpx;
     min-height: 76px;
     max-width: 343px;
     margin: 0 auto;
@@ -721,7 +716,6 @@ footer p {
     text-align: center;
     height: 96px;
     max-width: 343px;
-    border-radius: nullpx;
     margin-top: 12px;
     margin-bottom: 32px;
   }
@@ -735,7 +729,6 @@ footer p {
     line-height: 26px;
     letter-spacing: 0em;
     text-align: center;
-    border-radius: nullpx;
     border: none;
   }
   .title img {
@@ -782,12 +775,10 @@ footer p {
     line-height: 28px;
     letter-spacing: 0em;
     text-align: center;
-    border-radius: nullpx;
   }
   .result p {
     height: 104px;
     width: 343px;
-    border-radius: nullpx;
   }
   .about-bottom p,
   .about-home p {
@@ -844,7 +835,6 @@ footer p {
     text-align: center !important;
     max-width: 203px !important;
     min-height: 51px;
-    border-radius: nullpx;
     margin-bottom: 32px;
     margin-left: 20px;
   }
@@ -862,7 +852,7 @@ footer p {
     align-items: center;
     min-height: 250px;
     max-width: 375px;
-    margin: opx;
+    margin: 0px;
     padding: 0px;
   }
   .talk {
@@ -878,7 +868,6 @@ footer p {
     text-align: center;
     height: 31px;
     width: 108px;
-    border-radius: nullpx;
     margin: 0 auto;
     display: block;
   }
@@ -897,13 +886,11 @@ footer p {
     margin-left: 32px;
     padding: 16px 0px 0px 16px;
   }
-
   .title-contacts {
     max-height: 250px;
     width: 100%;
     overflow: hidden;
   }
-
   .about-us .h2 {
     font-size: 24px;
     font-style: normal;
@@ -912,7 +899,6 @@ footer p {
     letter-spacing: 0.04em;
     text-align: center;
   }
-  
   .col-send {
     min-height: 514px;
     width: 342.6666564941406px;

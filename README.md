@@ -13,3 +13,15 @@
 ### Task 005 : [Позиционирование, работа с Flexbox](./attach/les_005.md)
 
 ### Task 006 : [Вёрстка сайта по макету Figma.](./attach/les_006.md)
+
+### Task 007 : [Адаптивная верстка](./attach/les_007.md)
+
+### Task 008 : [Валидность](./attach/les_008.md)
+
+https://lindx.000webhostapp.com/
+
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+  <img style="border:0;width:88px;height:31px"
+    src="//jigsaw.w3.org/css-validator/images/vcss-blue"
+    alt="Правильный CSS!" />
+</a>
