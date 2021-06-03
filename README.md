@@ -20,4 +20,5 @@
 
 https://lindx.000webhostapp.com/
 
-![](href="http://jigsaw.w3.org/css-validator/check/referer")
+
+![Правильный CSS!](http://jigsaw.w3.org/css-validator/check/referer)
