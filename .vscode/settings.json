@@ -1,7 +1,7 @@
 {
     "files.exclude": {
         "**/.dccache": true,
-        "README.md": true,
+        "README.md": false,
     },
 
     "workspaceCacheClean.silent": false,
