@@ -1,0 +1,7 @@
+package.json
+.vscode/*
+target/
+.settings
+.factorypath
+.project
+.dccache
