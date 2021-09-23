@@ -1,9 +1,38 @@
 {
-    "files.exclude": {
-        "**/.dccache": true,
-        "README.md": true,
-    },
-
-    "workspaceCacheClean.silent": false,
-    "workspaceCacheClean.autoReload": false,
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "files.exclude": {
+    "**/.classpath": false,
+    "**/.project": false,
+    "**/.settings": false,
+    "**/.factorypath": false,
+    "**/.dccache": true,
+    "README.md": false,
+  },
+  "database.connections": [
+    {
+      "type": "mysql",
+      "name": "lindx@localhost (MySql)",
+      "host": "localhost:3306",
+      "username": "lindx",
+      "database": "test2",
+      "password": "MySql12345!"
+    }
+  ],
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "localhost",
+      "database": "test2",
+      "username": "lindx",
+      "password": "MySql12345!"
+    }
+  ],
+  "workspaceCacheClean.silent": false,
+  "workspaceCacheClean.autoReload": false,
 }
