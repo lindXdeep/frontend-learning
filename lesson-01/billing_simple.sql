@@ -6,7 +6,6 @@ CREATE DATABASE billing_simple;
 
 USE billing_simple;
 
-
 CREATE TABLE IF NOT EXISTS `billing_simple`.`billing` (
   `payer_email` VARCHAR(255) NULL,
   `recipient_email` VARCHAR(255) NULL,
