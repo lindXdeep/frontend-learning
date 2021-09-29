@@ -1,4 +1,4 @@
-# SQL PostgreSql
+# Course 01 - Базы данных: SQL (DQL)
 
 - lesson 01: [SELECT](lesson-01-DQL)
 - lesson 02: [WHERE](lesson-01-DQL)
