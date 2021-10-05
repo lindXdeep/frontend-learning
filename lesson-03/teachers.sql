@@ -31,7 +31,7 @@ INSERT INTO achievements('teacher_id', 'stream_id', 'performance')
 
 -- *в таблице успеваемости измените тип столбца «Ключ потока» на REAL. Выполните задание на таблице с данными.
 ALTER TABLE achievements
-  RENAME TABLE achievements_old;
+  RENAME TO achievements_old;
 
 CREATE TABLE achievements (
   teacher_id INTEGER NOT NULL,
@@ -46,3 +46,8 @@ CREATE TABLE achievements (
 INSERT INTO achievements('teacher_id', 'stream_id', 'performance')
   SELECT teacher_id, stream_id, performance
     FROM achievements_old;
+
+DROP TABLE achievements_old;
+
+ALTER TABLE streams 
+  RENAME TO training_groups;
