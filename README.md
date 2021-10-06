@@ -1,16 +1,16 @@
 ## Hexlet: SQL PostgreSql - DQL
 
-- lesson 01: [SELECT](lesson-01-DQL)
-- lesson 02: [WHERE](lesson-01-DQL)
-- lesson 03: [WHERE и  LIKE](lesson-01-DQL)
-- lesson 04: [ORDER BY [ASC,DESC]](lesson-01-DQL)
-- lesson 05: [LIMIT](lesson-01-DQL)
-- lesson 06: [DISTINCT](lesson-01-DQL)
-- lesson 07: [GROUP BY](lesson-01-DQL)
-- lesson 08: [HAVING](lesson-01-DQL)
-- lesson 09: [INNER JOIN](lesson-01-DQL)
-- lesson 10: [INNER LEFT/RIGHT JOIN](lesson-01-DQL)
-- lesson 11: [Подзапросы - Subqueries](lesson-01-DQL)
+- lesson 01: [SELECT](cource-01-DQL)
+- lesson 02: [WHERE](cource-01-DQL)
+- lesson 03: [WHERE и  LIKE](cource-01-DQL)
+- lesson 04: [ORDER BY [ASC,DESC]](cource-01-DQL)
+- lesson 05: [LIMIT](cource-01-DQL)
+- lesson 06: [DISTINCT](cource-01-DQL)
+- lesson 07: [GROUP BY](cource-01-DQL)
+- lesson 08: [HAVING](cource-01-DQL)
+- lesson 09: [INNER JOIN](cource-01-DQL)
+- lesson 10: [INNER LEFT/RIGHT JOIN](cource-01-DQL)
+- lesson 11: [Подзапросы - Subqueries](cource-01-DQL)
 ## GeekBrains: SQL MySql - Introduction to Database Management
 
 - lesson 01: [Проектирование базы данных, нормальные формы](cource-02-intro/les-01)
