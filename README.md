@@ -1,17 +1,25 @@
-# Course 01 - Базы данных: SQL (DQL).
+## Hexlet: SQL PostgreSql - DQL
 
-- lesson 01: [SELECT](course-01-DQL)
-- lesson 02: [WHERE](course-01-DQL)
-- lesson 03: [WHERE и LIKE](course-01-DQL)
-- lesson 04: [ORDER BY [ASC,DESC]](course-01-DQL)
-- lesson 05: [LIMIT](course-01-DQL)
-- lesson 06: [DISTINCT](course-01-DQL)
-- lesson 07: [GROUP BY](course-01-DQL)
-- lesson 08: [HAVING](course-01-DQL)
-- lesson 09: [INNER JOIN](course-01-DQL)
-- lesson 10: [INNER LEFT/RIGHT JOIN](course-01-DQL)
-- lesson 11: [Подзапросы - Subqueries](course-01-DQL)
+- lesson 01: [SELECT](lesson-01-DQL)
+- lesson 02: [WHERE](lesson-01-DQL)
+- lesson 03: [WHERE и  LIKE](lesson-01-DQL)
+- lesson 04: [ORDER BY [ASC,DESC]](lesson-01-DQL)
+- lesson 05: [LIMIT](lesson-01-DQL)
+- lesson 06: [DISTINCT](lesson-01-DQL)
+- lesson 07: [GROUP BY](lesson-01-DQL)
+- lesson 08: [HAVING](lesson-01-DQL)
+- lesson 09: [INNER JOIN](lesson-01-DQL)
+- lesson 10: [INNER LEFT/RIGHT JOIN](lesson-01-DQL)
+- lesson 11: [Подзапросы - Subqueries](lesson-01-DQL)
+## GeekBrains: SQL MySql - Introduction to Database Management
 
-# Course 02 - Основы реляционных баз данных.
-
-- lesson 21: [Создание таблиц](course-02/lesson-01)
+- lesson 01: [Проектирование базы данных, нормальные формы](cource-02-intro/les-01)
+- lesson 02: [INSERT](cource-02-intro/les-02)
+- lesson 03: [SELECT, WHERE, DISTINCT, ORDER BY (ASC, DESC), LIMIT](cource-02-intro/les-03)
+- lesson 04: [DELETE и UPDATE](cource-02-intro/les-04)
+- lesson 05: [Консистентность (Согласованность) данных](cource-02-intro/les-05)
+- lesson 06: [Many to Many](cource-02-intro/les-06)
+- lesson 06: [Составной первичный ключ](cource-02-intro/les-06)
+- lesson 07: [INNER/LEFT/RIGHT JOIN, FULL OUTER JOIN (UNION) - Объединение данных из нескольких таблиц](cource-02-intro/les-07)
+- lesson 08: [Агрегирующие функции, GROUP BY, Индексы HAVING](cource-02-intro/les-08)
+- lesson 09: [Транзакции](cource-02-intro/les-09)
