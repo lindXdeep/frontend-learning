@@ -6,4 +6,16 @@
 
     "workspaceCacheClean.silent": false,
     "workspaceCacheClean.autoReload": false,
+    "sqltools.connections": [
+      {
+        "previewLimit": 50,
+        "server": "localhost",
+        "port": 5432,
+        "driver": "PostgreSQL",
+        "name": "lindx",
+        "database": "testdb",
+        "username": "lindx",
+        "password": "postgres12345"
+      }
+    ],
 }
