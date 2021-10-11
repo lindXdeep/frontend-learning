@@ -12,7 +12,6 @@ SELECT
 -- В отчёт вывести номер потока, название курса, фамилию и имя преподавателя (одним столбцом), оценку успеваемости.
 
 
-
 SELECT (name || ' ' || surname) AS teacher FROM teachers;
 
 SELECT 
@@ -50,14 +49,13 @@ performance
 -- 3. Найти среднюю успеваемость всех потоков преподавателя Николая Савельева. 
 -- В отчёт вывести идентификатор преподавателя и среднюю оценку по потокам.
 
-(
   SELECT 
-    (SELECT (name || ' ' || surname) FROM teachers WHERE teachers.id = achievements.teacher_id) AS teacher,
+    teacher_id,
     AVG(performance) 
-      FROM achievements 
-        GROUP BY teacher_id;
-)
-
+      FROM achievements
+        WHERE 
+          teacher_id = (SELECT id FROM teachers WHERE name = 'Николай' AND surname = 'Савельев');
+      
 -- 4. Найти потоки преподавателя Натальи Петровой а также потоки, по которым успеваемость ниже 4.8. 
 -- В отчёт вывести идентификатор потока, фамилию и имя преподавателя.
 
