@@ -18,5 +18,16 @@ SELECT
       JOIN training_groups
         ON courses.id = training_groups.course_id
           GROUP BY courses.name;
-       
-       
+
+-- 3. Для всех учителей найдите среднюю оценку по всем проведённым потокам. 
+-- В отчёт выведите идентификатор, фамилию и имя учителя, среднюю оценку по всем проведенным потокам. 
+-- Важно чтобы учителя, у которых не было потоков, также попали в выборку.
+
+SELECT 
+  teachers.id,
+  teachers.name || ' ' || teachers.surname AS teacher,
+  AVG(achievements.performance) AS amount
+    FROM teachers
+      LEFT JOIN achievements
+        ON teachers.id = achievements.teacher_id
+          GROUP BY teacher;
