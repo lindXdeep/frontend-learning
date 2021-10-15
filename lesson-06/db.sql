@@ -31,3 +31,36 @@ SELECT
       LEFT JOIN achievements
         ON teachers.id = achievements.teacher_id
           GROUP BY teacher;
+
+-- 4. Дополнительное задание. 
+-- Для каждого преподавателя выведите: 
+--    имя, фамилию, 
+--    минимальное значение успеваемости по всем потокам преподавателя, 
+--    название курса, который соответствует потоку с минимальным значением успеваемости, 
+--    максимальное значение успеваемости по всем потокам преподавателя, 
+--    название курса, соответствующий потоку с максимальным значением успеваемости, 
+--    дату начала следующего потока.
+
+
+SELECT
+  teachers.name || ' ' || teachers.surname AS teacher,
+  MIN(achievements.performance) AS min_course,
+  courses.name,
+  MAX(achievements.performance) AS max,
+  
+  -- тут я не совсем понял как добавить названия курсов соответствующий потоку с максимальным значением успеваемости, 
+  -- видимо тут должно быть что то типа вложенного запроса ?
+
+  -- (SELECT courses.name FROM courses WHERE courses.id = training_groups.course_id) AS max_course,
+
+  training_groups.started_at
+    FROM achievements
+      LEFT JOIN teachers
+        ON teachers.id = achievements.teacher_id
+      JOIN training_groups
+        ON training_groups.id = achievements.stream_id
+      JOIN courses
+        ON courses.id = training_groups.course_id
+GROUP BY teacher;
+
+
