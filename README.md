@@ -1,2 +1,3 @@
-# io-lindx-js
-javaScript-learning
+# MySql
+
+1. [DDL - управляем БД и таблицами](01-DDL/)
