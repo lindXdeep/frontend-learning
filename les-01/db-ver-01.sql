@@ -1,7 +1,7 @@
 CREATE DATABASE countries_and_cities_of_the_world;
 
 USE countries_and_cities_of_the_world;
-
+-- страна,  область, район,     город
 -- countries, areas, districts, cities
 
 CREATE TABLE cities (
