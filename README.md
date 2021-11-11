@@ -1,2 +1,6 @@
-# io-lindx-js
-javaScript-learning
+# MySql
+
+## DDL - управляем БД и таблицами
+
+1. [Управляем таблицами](01-DDL/)
+2. [Ограничения](02-constraints/)
