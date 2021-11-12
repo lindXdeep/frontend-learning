@@ -1,4 +1,3 @@
-
 # DDL - управляем БД и таблицами
 
 ### [db-02.1](db-02.1.sql) - PRIMARY KEY, FOREIGN KEY, CHECK, DEFAULT
