@@ -14,7 +14,7 @@
       "name": "lindx@localhost (MySql)",
       "host": "localhost:3306",
       "username": "lindx",
-      "database": "test",
+      "database": "countries_and_cities_of_the_world",
       "password": "Mysql12345!"
     }
   ],
@@ -28,7 +28,7 @@
       "port": 3306,
       "driver": "MySQL",
       "name": "localhost",
-      "database": "test",
+      "database": "countries_and_cities_of_the_world",
       "username": "lindx",
       "password": "Mysql12345!"
     }

@@ -2,7 +2,8 @@
 
 ## 1. Установить MySQL сервер и MySQL Workbench.
 
-![image-20211108030133033](./attach/image-20211108030133033.png)
+![image-20211113080351714](attach/image-20211113080351714.png)
+
 
 ## 2. Создать базу данных «Страны и города мира» с помощью MySQL Workbench. 
 
@@ -12,18 +13,10 @@
 
 > Нужно сдать скрипты создания объектов (файл .sql) и ER-диаграмму (файл .mwb). Файлы упаковать в архив.
 
-### ver 01 - [Страны и города мира.sql](db-ver-01.sql)
+### [Страны и города мира.sql](db.sql)
 
-- [Страны и города мира-ver02.mwb](mwb/countries_and_cities_of_the_world-ver01.mwb)
+- [Страны и города мира.mwb](./mwb/countries_and_cities_of_the_world-ver01.mwb)
 
-  ![image-20211108072120963](attach/image-20211108072120963.png)
-  
+  ![image-20211113075731832](attach/image-20211113075731832.png)
 
-### ver 02 - [Страны и города мира.sql](db-ver-02.sql)
-
-- [Страны и города мира-ver02.mwb](mwb/countries_and_cities_of_the_world-ver02.mwb)
-
-![image-20211108072327662](attach/image-20211108072327662.png)
-
-
-# [Lesson_001.zip](Lesson_001.zip)
+- [Lesson_001.zip](./zip/lesson_001.zip)
