@@ -6,9 +6,15 @@
     "**/.settings": false,
     "**/.factorypath": false,
     "**/.dccache": true,
+<<<<<<< HEAD
     "package.json": true,
     "README.md": false,
     ".gitignore": true,
+=======
+    "package.json": false,
+    "README.md": false,
+    ".gitignore": false,
+>>>>>>> 5a471b6f36e8d75e298be1b5513fb48cc31959a6
   },
   "database.connections": [
     {
@@ -16,7 +22,11 @@
       "name": "lindx@localhost (MySql)",
       "host": "localhost:3306",
       "username": "lindx",
+<<<<<<< HEAD
       "database": "test",
+=======
+      "database": "geodata",
+>>>>>>> 5a471b6f36e8d75e298be1b5513fb48cc31959a6
       "password": "Mysql12345!"
     }
   ],
@@ -29,8 +39,13 @@
       "server": "localhost",
       "port": 3306,
       "driver": "MySQL",
+<<<<<<< HEAD
       "name": "localhost",
       "database": "test",
+=======
+      "name": "geodata",
+      "database": "geodata",
+>>>>>>> 5a471b6f36e8d75e298be1b5513fb48cc31959a6
       "username": "lindx",
       "password": "Mysql12345!"
     }
