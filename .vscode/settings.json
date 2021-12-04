@@ -1,25 +1,17 @@
 {
   "java.configuration.updateBuildConfiguration": "automatic",
+  
   "files.exclude": {
     "**/.classpath": false,
     "**/.project": false,
     "**/.settings": false,
     "**/.factorypath": false,
-    "**/.dccache": true,
-    "package.json": false,
+    "**/.dccache": false,
     "README.md": false,
-    ".gitignore": false,
   },
-  "database.connections": [
-    {
-      "type": "mysql",
-      "name": "lindx@localhost (MySql)",
-      "host": "localhost:3306",
-      "username": "lindx",
-      "database": "geodata",
-      "password": "Mysql12345!"
-    }
-  ],
+
+  "workspaceCacheClean.silent": false,
+  "workspaceCacheClean.autoReload": false,
   "sqltools.connections": [
     {
       "mysqlOptions": {
@@ -28,13 +20,11 @@
       "previewLimit": 50,
       "server": "localhost",
       "port": 3306,
+      "askForPassword": true,
       "driver": "MySQL",
       "name": "geodata",
       "database": "geodata",
-      "username": "lindx",
-      "password": "Mysql12345!"
+      "username": "lindx"
     }
   ],
-  "workspaceCacheClean.silent": false,
-  "workspaceCacheClean.autoReload": false,
 }
