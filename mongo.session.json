@@ -1,0 +1,64 @@
+// Cоздадим базу данных и пользователя для неё, который сможет управлять всеми базами данных.
+
+// Переключимяся в базу данных admin и создадим нового пользователя
+
+use admin
+
+// задаём имя пользователя и разрешаем ему доступ ко всем базам данных
+
+db.createUser({
+    user: "lindx",
+    pwd: passwordPrompt(),
+    roles: [{
+            role: "userAdminAnyDatabase",
+            db: "admin"
+        },
+        "readWriteAnyDatabase"
+    ]
+})
+
+// добавим один документ
+
+db.users.insertOne({
+    "_id": 1234567,
+    "name": "Tom",
+    "age": 28,
+    "languages": [
+        "english", "spanish"
+    ]
+})
+
+db.users.insertMany(
+    [{
+            "_id": 12344567,
+            "name": "Tom",
+            "age": 28,
+            "languages": [
+                "english", "spanish"
+            ]
+        },
+        {
+            "_id": 1234666,
+            "name": "Alice",
+            "age": 24,
+            "languages": [
+                "english", "spanish"
+            ]
+        }
+    ]
+)
+
+// Есть еще один способ добавления
+
+document = ({
+    "name": "Bill",
+    "age": 32,
+    languages: [
+        "english", "french"
+    ]
+})
+
+db.users.insertOne(document)
+
+
+load("./users.json")
