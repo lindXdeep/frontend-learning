@@ -1,9 +1,0 @@
-{
-    "files.exclude": {
-        "**/.dccache": true,
-        "README.md": false,
-    },
-
-    "workspaceCacheClean.silent": false,
-    "workspaceCacheClean.autoReload": false,
-}
