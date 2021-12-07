@@ -30,3 +30,14 @@
 - lesson 07: [INNER/LEFT/RIGHT JOIN, FULL OUTER JOIN (UNION) - Объединение данных из нескольких таблиц](cource-03-intro/les-07)
 - lesson 08: [Агрегирующие функции, GROUP BY, Индексы HAVING](cource-03-intro/les-08)
 - lesson 09: [Транзакции](cource-03-intro/les-09)
+## GeekBrains: SQL Sqlite
+
+- lesson-01: [Введение в теорию реляционных баз данных](./cource-04-sqlite/lesson-01)
+- lesson-02: [Базовые понятия структуры базы данных](./cource-04-sqlite/lesson-02)
+- lesson-03: [Определение данных. Базовые операции с данными](./cource-04-sqlite/lesson-03)
+- lesson-04: [Получение информации из базы данных](./cource-04-sqlite/lesson-04)
+- lesson-05: [Вложенные запросы и объединение Union](./cource-04-sqlite/lesson-05)
+- lesson-06: [Объединение таблиц через JOIN](./cource-04-sqlite/lesson-06)
+- lesson-07: [Расширенные возможности SQL](./cource-04-sqlite/lesson-07)
+- lesson-08: [Оконные функции, индексы, работа в графическом клиенте](./cource-04-sqlite/lesson-08)
+
