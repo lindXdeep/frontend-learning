@@ -72,7 +72,7 @@ INSERT INTO sportmens
          ('Денис', 11.6);
 
 SELECT * FROM sportmens
-  ORDER BY finishTime DESC
+  ORDER BY finishTime ASC
     LIMIT 3;
 
 -- 5. Найдите компанию, с наибольшим количеством продаж.
@@ -84,8 +84,11 @@ SELECT * FROM sales
 
 --  вторйо способ
 
-SELECT max(sales) 
-  FROM sales;
+SELECT * FROM sales 
+  WHERE sales = (
+                  SELECT max(sales) 
+                    FROM sales
+                );
 
 -- 6. Посчитайте среднее количество продаж по всем компаниям.
 -- таблица из задания 1.
