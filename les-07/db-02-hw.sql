@@ -72,7 +72,7 @@ INSERT INTO sportmens
          ('Денис', 11.6);
 
 SELECT * FROM sportmens
-  ORDER BY finishTime DESC
+  ORDER BY finishTime ASC
     LIMIT 3;
 
 -- 5. Найдите компанию, с наибольшим количеством продаж.
@@ -84,8 +84,12 @@ SELECT * FROM sales
 
 --  вторйо способ
 
-SELECT max(sales) 
-  FROM sales;
+SELECT * FROM sales 
+  WHERE sales = (
+                  SELECT max(sales) 
+                    FROM sales
+                );
+
 
 -- 6. Посчитайте среднее количество продаж по всем компаниям.
 -- таблица из задания 1.
@@ -163,9 +167,8 @@ INSERT INTO vendors2
         (3, 'Canon'),
         (4, 'Xerox');
 
-
 SELECT 
-   DISTINCT(vendorName)
+    DISTINCT(vendorName)
   FROM (
     SELECT * FROM vendors1
     UNION
@@ -191,7 +194,6 @@ INSERT INTO departments
         ('B', 'Clark', 1400),
         ('B', 'Gibbson', 1100),
         ('B', 'Stark', 900);
-
 
 SELECT 
   * 
@@ -227,3 +229,8 @@ SELECT
   firstName
   FROM users
     ORDER BY firstName;
+
+ SELECT 
+    row_number() OVER(ORDER BY firstName), 
+    firstName 
+  FROM users;
