@@ -22,8 +22,8 @@
       "port": 3306,
       "askForPassword": true,
       "driver": "MySQL",
-      "name": "geodata",
-      "database": "geodata",
+      "name": "interview",
+      "database": "dbinterview",
       "username": "lindx"
     }
   ],
