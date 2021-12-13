@@ -1,0 +1,23 @@
+mongoimport - d testadd - c address "./zip/primer-dataset.json"
+
+mongo
+show dbs
+use testadd
+db
+show collections
+
+db.stats() {
+    "db": "testadd",
+    "collections": 1,
+    "views": 0,
+    "objects": 25359,
+    "avgObjSize": 419.196261682243,
+    "dataSize": 10630398,
+    "storageSize": 4681728,
+    "numExtents": 0,
+    "indexes": 1,
+    "indexSize": 237568,
+    "fsUsedSize": 58991230976,
+    "fsTotalSize": 249533820928,
+    "ok": 1
+}
