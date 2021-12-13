@@ -22,8 +22,8 @@
       "port": 3306,
       "askForPassword": true,
       "driver": "MySQL",
-      "name": "interview",
-      "database": "dbinterview",
+      "name": "social_network",
+      "database": "social_network",
       "username": "lindx"
     }
   ],

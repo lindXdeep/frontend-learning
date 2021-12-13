@@ -13,3 +13,4 @@ GRANT SELECT ON geodata.* TO 'user2'@'localhost';
 GRANT INSERT, UPDATE, DELETE ON geodata._cities TO 'user2'@'localhost';
 
 FLUSH PRIVILEGES;
+
